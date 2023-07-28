@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Running $0"
+
 # a file to try things without retagging
 
 cat <<EOF | python3
