@@ -4,4 +4,4 @@ echo "Hello $1"
 time=$(date)
 echo "time=$time" >> "$GITHUB_OUTPUT"
 echo "python execution"
-time python -V
+bash -c "time python -V"
