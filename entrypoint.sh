@@ -11,6 +11,8 @@ bash -c "time python -V"
 ls -l
 echo "$0: " "$@"
 
+ls -l /
+
 shopt -s nullglob
 for f in commands.*; do
     $f
