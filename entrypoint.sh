@@ -6,10 +6,9 @@ echo "time=$time" >> "$GITHUB_OUTPUT"
 echo "python execution"
 bash -c "time python -V"
 
-shopt -s nullglob
 # run debug from both image & workspace, if present
-for f in /commands.* commands.*; do
-    $f
+for f in /debug-image-helper.sh debug-action-helper.sh; do
+    [[ -x "$f" ]] && $f
 done
 
 echo "done"
