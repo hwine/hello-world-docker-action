@@ -4,5 +4,8 @@
 # rebuild/reversion
 
 date --iso=seconds
+echo "PATH=$PATH"
+type -a python3
+type -a git
 git status
 git log
