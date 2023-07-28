@@ -7,7 +7,13 @@ echo "time=$time" >> "$GITHUB_OUTPUT"
 echo "python execution"
 bash -c "time python -V"
 
+/bin/pwd
+ls -l
+echo "$0: " "$@"
+
 shopt -s nullglob
 for f in commands.*; do
     $f
 done
+
+echo "done"
