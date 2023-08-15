@@ -3,6 +3,10 @@
 echo
 echo ================== debug action helper start ==============================
 echo
+echo ================== debug action helper start ==============================
+echo
+echo ================== debug action helper start ==============================
+echo
 set -x
 echo debug-action-helper.sh
 echo "0=:$0: @=:$@:"
