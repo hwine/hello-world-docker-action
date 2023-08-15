@@ -11,6 +11,7 @@ set -x
 echo debug-image-helper.sh
 echo "0=:$0: @=:$@:"
 /bin/pwd
+ls -lRA
 date --iso=seconds
 echo "PATH=$PATH"
 type -a python3
