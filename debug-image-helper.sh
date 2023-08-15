@@ -3,6 +3,9 @@
 # Add commands to experiment with here -- doesn't require an action
 # rebuild/reversion
 
+set -x
+echo debug-image-helper.sh
+echo "0=:$0: @=:$@:"
 date --iso=seconds
 echo "PATH=$PATH"
 type -a python3

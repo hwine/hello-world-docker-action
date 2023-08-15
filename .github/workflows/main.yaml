@@ -3,14 +3,14 @@ on: [push]
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
-    name: A job to say hello (v1.1.10)
+    name: A job to say hello (v1.1.11)
     steps:
       - name: checkout before we run action
         id: fred
         uses: actions/checkout@v3
       - name: Hello world action step
         id: hello
-        uses: hwine/hello-world-docker-action@v1.1.10
+        uses: hwine/hello-world-docker-action@v1.1.11
         with:
           who-to-greet: 'Mona the Octocat'
       # Use the output from the `hello` step
