@@ -1,10 +1,13 @@
 #!/usr/bin/env bash
 
+echo
+echo ================== debug action helper start ==============================
+echo
 set -x
 echo debug-action-helper.sh
 echo "0=:$0: @=:$@:"
 echo "Running $0"
-pwd
+/bin/pwd
 
 # a file to try things without retagging
 
@@ -13,3 +16,11 @@ import sys
 
 print(sys.version)
 EOF
+
+set +x
+
+declare -p ${!GIT*}
+
+echo
+echo ================== debug action helper end ==============================
+echo
